@@ -8,3 +8,6 @@ Developed using:
 - AWS Lambda
 - API Gateway
 - Python
+
+- **Copyright © 2026 Yash Bawaskar. All Rights Reserved.**
+Unauthorized copying, modification, distribution, or commercial use of this project or its contents is prohibited without prior written permission from the author.
