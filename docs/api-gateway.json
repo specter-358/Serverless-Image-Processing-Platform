@@ -1,0 +1,35 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "api_imageprocessing",
+    "version" : "2026-06-27 13:06:57UTC"
+  },
+  "servers" : [ {
+    "url" : "https://cl8tjud167.execute-api.ap-south-1.amazonaws.com/{basePath}",
+    "variables" : {
+      "basePath" : {
+        "default" : ""
+      }
+    }
+  } ],
+  "paths" : {
+    "/image" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /image"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:ap-south-1:lambda:path/2015-03-31/functions/arn:aws:lambda:ap-south-1:483829975290:function:GetImage/invocations",
+          "connectionType" : "INTERNET",
+          "timeoutInMillis" : 30000
+        }
+      }
+    }
+  },
+  "x-amazon-apigateway-importexport-version" : "1.0"
+}
